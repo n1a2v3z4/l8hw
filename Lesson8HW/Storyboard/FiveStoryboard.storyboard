@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Five View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="FiveViewController" id="Y6W-OH-hqX" customClass="FiveViewController" customModule="Lesson8HW" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="На первом экране вы написали:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CeO-ep-s1Q">
+                                <rect key="frame" x="70" y="102" width="274" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.65000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VXx-vZ-8U4">
+                                <rect key="frame" x="20" y="179" width="374" height="100"/>
+                                <color key="backgroundColor" red="1" green="0.7130832694" blue="0.87531940159999999" alpha="0.8980392157" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="WH8-4B-khn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BKm-5B-3xf">
+                                <rect key="frame" x="20" y="456" width="374" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Вернуться на первый экран">
+                                    <color key="titleColor" red="0.36741537944256292" green="0.96228998899999996" blue="0.18292979916764315" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <segue destination="PDG-z5-cCo" kind="show" id="5rO-HD-adC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="linkColor"/>
+                        <constraints>
+                            <constraint firstItem="CeO-ep-s1Q" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="58" id="D64-vo-Xbn"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="BKm-5B-3xf" secondAttribute="trailing" constant="20" id="FRO-aB-KLp"/>
+                            <constraint firstItem="VXx-vZ-8U4" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="GpF-AU-xNq"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="BKm-5B-3xf" secondAttribute="trailing" constant="20" id="NjZ-8w-YyN"/>
+                            <constraint firstItem="BKm-5B-3xf" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="Tcm-ar-8nY"/>
+                            <constraint firstItem="VXx-vZ-8U4" firstAttribute="top" secondItem="CeO-ep-s1Q" secondAttribute="bottom" constant="56" id="Y69-38-EH6"/>
+                            <constraint firstItem="VXx-vZ-8U4" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="kOe-zx-Yrl"/>
+                            <constraint firstItem="CeO-ep-s1Q" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="lAh-Ks-Zr6"/>
+                            <constraint firstItem="BKm-5B-3xf" firstAttribute="top" secondItem="VXx-vZ-8U4" secondAttribute="bottom" constant="177" id="teM-es-CpU"/>
+                            <constraint firstItem="BKm-5B-3xf" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="wjf-jz-SHe"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="VXx-vZ-8U4" secondAttribute="trailing" constant="20" id="xGT-fZ-tXb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="fiveLableOutlet" destination="VXx-vZ-8U4" id="zNF-3X-c9p"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-20.289855072463769" y="69.642857142857139"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="tZz-mO-SBc">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" id="PDG-z5-cCo" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="i9M-GK-JyC"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SGS-Xy-qDF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="695" y="59"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

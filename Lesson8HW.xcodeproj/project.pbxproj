@@ -13,6 +13,13 @@
 		D3D1279626C54E4F004D898D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3D1279426C54E4F004D898D /* Main.storyboard */; };
 		D3D1279826C54E53004D898D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3D1279726C54E53004D898D /* Assets.xcassets */; };
 		D3D1279B26C54E53004D898D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3D1279926C54E53004D898D /* LaunchScreen.storyboard */; };
+		D3D127A326C559DB004D898D /* SecondStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3D127A226C559DA004D898D /* SecondStoryboard.storyboard */; };
+		D3D127A526C55A00004D898D /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D127A426C55A00004D898D /* SecondViewController.swift */; };
+		D3D127A926C5955D004D898D /* ToViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D127A826C5955D004D898D /* ToViewController.swift */; };
+		D3D127AB26C599E3004D898D /* FourthStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3D127AA26C599E3004D898D /* FourthStoryboard.storyboard */; };
+		D3D127AD26C599FD004D898D /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D127AC26C599FD004D898D /* FourthViewController.swift */; };
+		D3D127AF26C657C0004D898D /* FiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D127AE26C657C0004D898D /* FiveViewController.swift */; };
+		D3D127B126C657DD004D898D /* FiveStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3D127B026C657DD004D898D /* FiveStoryboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		D3D1279726C54E53004D898D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D3D1279A26C54E53004D898D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D3D1279C26C54E53004D898D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3D127A226C559DA004D898D /* SecondStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SecondStoryboard.storyboard; sourceTree = "<group>"; };
+		D3D127A426C55A00004D898D /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		D3D127A826C5955D004D898D /* ToViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToViewController.swift; sourceTree = "<group>"; };
+		D3D127AA26C599E3004D898D /* FourthStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FourthStoryboard.storyboard; sourceTree = "<group>"; };
+		D3D127AC26C599FD004D898D /* FourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
+		D3D127AE26C657C0004D898D /* FiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveViewController.swift; sourceTree = "<group>"; };
+		D3D127B026C657DD004D898D /* FiveStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FiveStoryboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +70,38 @@
 		D3D1278D26C54E4F004D898D /* Lesson8HW */ = {
 			isa = PBXGroup;
 			children = (
-				D3D1278E26C54E4F004D898D /* AppDelegate.swift */,
+				D3D127A626C55A21004D898D /* Storyboard */,
+				D3D127A726C55A62004D898D /* ViewController */,
 				D3D1279026C54E4F004D898D /* SceneDelegate.swift */,
-				D3D1279226C54E4F004D898D /* ViewController.swift */,
-				D3D1279426C54E4F004D898D /* Main.storyboard */,
+				D3D1278E26C54E4F004D898D /* AppDelegate.swift */,
 				D3D1279726C54E53004D898D /* Assets.xcassets */,
 				D3D1279926C54E53004D898D /* LaunchScreen.storyboard */,
 				D3D1279C26C54E53004D898D /* Info.plist */,
 			);
 			path = Lesson8HW;
+			sourceTree = "<group>";
+		};
+		D3D127A626C55A21004D898D /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				D3D1279426C54E4F004D898D /* Main.storyboard */,
+				D3D127A226C559DA004D898D /* SecondStoryboard.storyboard */,
+				D3D127AA26C599E3004D898D /* FourthStoryboard.storyboard */,
+				D3D127B026C657DD004D898D /* FiveStoryboard.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		D3D127A726C55A62004D898D /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D3D1279226C54E4F004D898D /* ViewController.swift */,
+				D3D127A426C55A00004D898D /* SecondViewController.swift */,
+				D3D127A826C5955D004D898D /* ToViewController.swift */,
+				D3D127AC26C599FD004D898D /* FourthViewController.swift */,
+				D3D127AE26C657C0004D898D /* FiveViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,9 +161,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3D127AB26C599E3004D898D /* FourthStoryboard.storyboard in Resources */,
+				D3D127B126C657DD004D898D /* FiveStoryboard.storyboard in Resources */,
 				D3D1279B26C54E53004D898D /* LaunchScreen.storyboard in Resources */,
 				D3D1279826C54E53004D898D /* Assets.xcassets in Resources */,
 				D3D1279626C54E4F004D898D /* Main.storyboard in Resources */,
+				D3D127A326C559DB004D898D /* SecondStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +177,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3D127AF26C657C0004D898D /* FiveViewController.swift in Sources */,
+				D3D127AD26C599FD004D898D /* FourthViewController.swift in Sources */,
+				D3D127A526C55A00004D898D /* SecondViewController.swift in Sources */,
 				D3D1279326C54E4F004D898D /* ViewController.swift in Sources */,
 				D3D1278F26C54E4F004D898D /* AppDelegate.swift in Sources */,
+				D3D127A926C5955D004D898D /* ToViewController.swift in Sources */,
 				D3D1279126C54E4F004D898D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
